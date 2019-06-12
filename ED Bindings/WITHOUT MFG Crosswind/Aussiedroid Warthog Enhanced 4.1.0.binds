@@ -13,9 +13,9 @@
 	<MouseDecayRate Value="4.00000000" />
 	<MouseDeadzone Value="0.05000000" />
 	<MouseLinearity Value="1.00000000" />
-	<MouseGUI Value="1" />
+	<MouseGUI Value="0" />
 	<YawAxisRaw>
-		<Binding Device="ThrustMasterWarthogCombined" Key="Joy_XAxis" />
+		<Binding Device="T-Rudder" Key="Joy_ZAxis" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.04000000" />
 	</YawAxisRaw>
@@ -36,8 +36,8 @@
 		<ToggleOn Value="0" />
 	</YawToRollButton>
 	<RollAxisRaw>
-		<Binding Device="{NoDevice}" Key="Joy_RZAxis" />
-		<Inverted Value="1" />
+		<Binding Device="ThrustMasterWarthogCombined" Key="Joy_XAxis" />
+		<Inverted Value="0" />
 		<Deadzone Value="0.20000000" />
 	</RollAxisRaw>
 	<RollLeftButton>
@@ -486,7 +486,7 @@
 	</ChargeECM>
 	<EnableRumbleTrigger Value="1" />
 	<EnableMenuGroups Value="0" />
-	<MouseGUI Value="1" />
+	<MouseGUI Value="0" />
 	<WeaponColourToggle>
 		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="Keyboard" Key="Key_1">
@@ -689,7 +689,7 @@
 	<HeadlookMotionSensitivity Value="1.00000000" />
 	<yawRotateHeadlook Value="0" />
 	<CamPitchAxis>
-		<Binding Device="{NoDevice}" Key="" />
+		<Binding Device="T-Rudder" Key="Joy_XAxis" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</CamPitchAxis>
@@ -706,8 +706,8 @@
 		</Secondary>
 	</CamPitchDown>
 	<CamYawAxis>
-		<Binding Device="{NoDevice}" Key="Joy_RZAxis" />
-		<Inverted Value="1" />
+		<Binding Device="T-Rudder" Key="Joy_ZAxis" />
+		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</CamYawAxis>
 	<CamYawLeft>
@@ -812,7 +812,7 @@
 	<MouseBuggyYMode Value="" />
 	<MouseBuggyYDecay Value="0" />
 	<SteeringAxis>
-		<Binding Device="ThrustMasterWarthogCombined" Key="Joy_XAxis" />
+		<Binding Device="T-Rudder" Key="Joy_ZAxis" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.04000000" />
 	</SteeringAxis>
@@ -1356,8 +1356,8 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</YawCameraRight>
 	<RollCamera>
-		<Binding Device="{NoDevice}" Key="Joy_RZAxis" />
-		<Inverted Value="1" />
+		<Binding Device="T-Rudder" Key="Joy_ZAxis" />
+		<Inverted Value="0" />
 		<Deadzone Value="0.09000000" />
 	</RollCamera>
 	<RollCameraLeft>
@@ -1433,8 +1433,8 @@
 		<Secondary Device="Mouse" Key="Mouse_3" />
 	</CommanderCreator_Rotation_MouseToggle>
 	<CommanderCreator_Rotation>
-		<Binding Device="ThrustMasterWarthogCombined" Key="Joy_XAxis" />
-		<Inverted Value="1" />
+		<Binding Device="T-Rudder" Key="Joy_ZAxis" />
+		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</CommanderCreator_Rotation>
 	<GalnetAudio_Play_Pause>
@@ -1506,8 +1506,8 @@
 		<Secondary Device="Keyboard" Key="Key_F" />
 	</ExplorationFSSMiniZoomOut>
 	<ExplorationFSSRadioTuningX_Raw>
-		<Binding Device="ThrustMasterWarthogCombined" Key="Joy_RXAxis" />
-		<Inverted Value="1" />
+		<Binding Device="T-Rudder" Key="Joy_ZAxis" />
+		<Inverted Value="0" />
 		<Deadzone Value="0.03000000" />
 	</ExplorationFSSRadioTuningX_Raw>
 	<ExplorationFSSRadioTuningX_Increase>
