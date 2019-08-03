@@ -335,7 +335,8 @@
 //	MapKey(&Throttle,  MSD,  0); 																					// Mic Switch DOWN	(Mapped in ED Bindings File)
 //	MapKey(&Throttle,  MSL,  0); 																					// Mic Switch LEFT	(Mapped in ED Bindings File)
 	MapKey(&Throttle,  MSR,  EXEC("if(Joystick[S4]) ActKey(KEYON+PULSE+mBoostBrake);"								// Boost Brake w/ Pinky Switch, (P34)
-								"if(!Joystick[S4]) ActKey(KEYON+PULSE+DX28);")); 									// ELSE pass button to Elite.	(P34)
+								"if(!Joystick[S4]) ActKey(KEYON+DX28);")); 											// ELSE pass button to Elite.	(P34)
+	MapKeyR(&Throttle, MSR,	 UP+DX28);					
 	MapKey(&Throttle,  MSP,  EXEC("initMicCommander();"));															// Mic Switch PUSH
 	MapKeyR(&Throttle, MSP,  EXEC("initMicCommander();"));															// Mic Switch PUSH RELEASE
 
