@@ -152,8 +152,7 @@
 								0,	 EXEC("if(!EndlessStatePri) ActKey(KEYON+UP+PrimaryFire);"),		// IM, OM
 								0,	 EXEC("if(!EndlessStatePri) ActKey(KEYON+UP+PrimaryFire);"));		// ID, OD
 //	MapKey(&Joystick,   	TG2, 	 SecondaryFire);																// Trigger 2			[Second Stage Trigger] (Mapped in initHardpointManagement())
-	MapKeyR(&Joystick,  	TG2, 	 EXEC("ActKey(KEYON+UP+SecondaryFire); if(combinePriSecFire) ActKey(KEYON+DOWN+PrimaryFire);"));						// Release Trigger 2	[Second Stage Trigger] (Keeps Primary firing after releasing Secondary Tier)										// Release Trigger 2	[Second Stage Trigger] (Keeps Primary firing after releasing Secondary Tier)
-
+	MapKeyR(&Joystick,  	TG2, 	 EXEC("ActKey(KEYON+UP+SecondaryFire); if(combinePriSecFire) ActKey(KEYON+DOWN+PrimaryFire);"));						// Release Trigger 2	[Second Stage Trigger] (Keeps Primary firing after releasing Secondary Tier)
 
 	// UTILITY SLOTS //
 	if(ShipUtilityPref == 0) {
@@ -335,7 +334,8 @@
 //	MapKey(&Throttle,  MSU,  0); 																					// Mic Switch UP	(Mapped in ED Bindings File)
 //	MapKey(&Throttle,  MSD,  0); 																					// Mic Switch DOWN	(Mapped in ED Bindings File)
 //	MapKey(&Throttle,  MSL,  0); 																					// Mic Switch LEFT	(Mapped in ED Bindings File)
-//	MapKey(&Throttle,  MSR,  0); 																					// Mic Switch RIGHT	(Mapped in ED Bindings File)
+	MapKey(&Throttle,  MSR,  EXEC("if(Joystick[S4]) ActKey(KEYON+PULSE+mBoostBrake);"								// Boost Brake w/ Pinky Switch, (P34)
+								"if(!Joystick[S4]) ActKey(KEYON+PULSE+DX28);")); 									// ELSE pass button to Elite.	(P34)
 	MapKey(&Throttle,  MSP,  EXEC("initMicCommander();"));															// Mic Switch PUSH
 	MapKeyR(&Throttle, MSP,  EXEC("initMicCommander();"));															// Mic Switch PUSH RELEASE
 
