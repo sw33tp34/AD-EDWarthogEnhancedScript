@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Root PresetName="Aussiedroid Warthog Enhanced 4.1.0" MajorVersion="3" MinorVersion="0">
+<Root PresetName="HCS Aussiedroid Warthog Enhanced 4.1.0" MajorVersion="3" MinorVersion="0">
 	<KeyboardLayout>en-US</KeyboardLayout>
 	<MouseXMode Value="" />
 	<MouseXDecay Value="0" />
@@ -84,7 +84,7 @@
 		<Deadzone Value="0.00000000" />
 	</VerticalThrustRaw>
 	<UpThrustButton>
-		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_28" />
+		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="Keyboard" Key="Key_R" />
 	</UpThrustButton>
 	<DownThrustButton>
@@ -92,9 +92,9 @@
 		<Secondary Device="Keyboard" Key="Key_F" />
 	</DownThrustButton>
 	<AheadThrust>
-		<Binding Device="{NoDevice}" Key="" />
+		<Binding Device="T-Rudder" Key="Joy_XAxis" />
 		<Inverted Value="0" />
-		<Deadzone Value="0.00000000" />
+		<Deadzone Value="0.20500000" />
 	</AheadThrust>
 	<ForwardThrustButton>
 		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_24" />
@@ -110,7 +110,7 @@
 		<ToggleOn Value="1" />
 	</UseAlternateFlightValuesToggle>
 	<YawAxisAlternate>
-		<Binding Device="{NoDevice}" Key="Joy_RZAxis" />
+		<Binding Device="{NoDevice}" Key="" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</YawAxisAlternate>
@@ -120,7 +120,7 @@
 		<Deadzone Value="0.00000000" />
 	</RollAxisAlternate>
 	<PitchAxisAlternate>
-		<Binding Device="{NoDevice}" Key="Joy_XAxis" />
+		<Binding Device="{NoDevice}" Key="" />
 		<Inverted Value="1" />
 		<Deadzone Value="0.00000000" />
 	</PitchAxisAlternate>
@@ -145,7 +145,7 @@
 		<Secondary Device="Keyboard" Key="Key_R">
 			<Modifier Device="Keyboard" Key="Key_LeftControl" />
 		</Secondary>
-		<ToggleOn Value="0" />
+		<ToggleOn Value="1" />
 	</ToggleReverseThrottleInput>
 	<ForwardKey>
 		<Primary Device="{NoDevice}" Key="" />
@@ -285,7 +285,7 @@
 		<ToggleOn Value="1" />
 	</ToggleFlightAssist>
 	<UseBoostJuice>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_28" />
 		<Secondary Device="Keyboard" Key="Key_Tab" />
 	</UseBoostJuice>
 	<HyperSuperCombination>
@@ -375,11 +375,17 @@
 	</TargetNextRouteSystem>
 	<PrimaryFire>
 		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_1" />
-		<Secondary Device="Mouse" Key="Mouse_1" />
+		<Secondary Device="Keyboard" Key="Key_K">
+			<Modifier Device="Keyboard" Key="Key_LeftAlt" />
+			<Modifier Device="Keyboard" Key="Key_RightAlt" />
+		</Secondary>
 	</PrimaryFire>
 	<SecondaryFire>
 		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_3" />
-		<Secondary Device="Mouse" Key="Mouse_2" />
+		<Secondary Device="Keyboard" Key="Key_L">
+			<Modifier Device="Keyboard" Key="Key_LeftAlt" />
+			<Modifier Device="Keyboard" Key="Key_RightControl" />
+		</Secondary>
 	</SecondaryFire>
 	<CycleFireGroupNext>
 		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_16">
@@ -586,12 +592,13 @@
 		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="Keyboard" Key="Key_7" />
 	</PlayerHUDModeToggle>
-	<ExplorationFSSEnter>
-		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_28">
+	<ExplorationFSSEnter
+		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_30">
 			<Modifier Device="ThrustMasterWarthogCombined" Key="Joy_4" />
 		</Primary>
 		<Secondary Device="Keyboard" Key="Key_F">
 			<Modifier Device="Keyboard" Key="Key_LeftAlt" />
+			<Modifier Device="Keyboard" Key="Key_RightAlt" />
 		</Secondary>
 	</ExplorationFSSEnter>
 	<UI_Up>
@@ -757,7 +764,7 @@
 		</Secondary>
 	</CamTranslateRight>
 	<CamTranslateZAxis>
-		<Binding Device="{NoDevice}" Key="Joy_XAxis" />
+		<Binding Device="{NoDevice}" Key="" />
 		<Inverted Value="1" />
 		<Deadzone Value="0.00000000" />
 	</CamTranslateZAxis>
@@ -855,7 +862,7 @@
 		<Secondary Device="Keyboard" Key="Key_S" />
 	</BuggyPitchDownButton>
 	<VerticalThrustersButton>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_28" />
 		<Secondary Device="Keyboard" Key="Key_O" />
 		<ToggleOn Value="0" />
 	</VerticalThrustersButton>
@@ -941,12 +948,15 @@
 	<BuggyThrottleRange Value="" />
 	<BuggyToggleReverseThrottleInput>
 		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_19" />
-		<Secondary Device="{NoDevice}" Key="" />
+		<Secondary Device="Keyboard" Key="Key_Numpad_0">
+			<Modifier Device="Keyboard" Key="Key_LeftAlt" />
+			<Modifier Device="Keyboard" Key="Key_RightControl" />
+		</Secondary>
 		<ToggleOn Value="1" />
 	</BuggyToggleReverseThrottleInput>
 	<BuggyThrottleIncrement Value="0.00000000" />
 	<IncreaseSpeedButtonMax>
-		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_28" />
+		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="Keyboard" Key="Key_E" />
 	</IncreaseSpeedButtonMax>
 	<DecreaseSpeedButtonMax>
@@ -1302,7 +1312,7 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</MoveFreeCamLeft>
 	<MoveFreeCamZ>
-		<Binding Device="{NoDevice}" Key="Joy_XAxis" />
+		<Binding Device="{NoDevice}" Key="" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.14999999" />
 	</MoveFreeCamZ>
@@ -1342,9 +1352,9 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</PitchCameraDown>
 	<YawCamera>
-		<Binding Device="ThrustMasterWarthogCombined" Key="Joy_XAxis" />
+		<Binding Device="T-Rudder" Key="Joy_ZAxis" />
 		<Inverted Value="0" />
-		<Deadzone Value="0.06000000" />
+		<Deadzone Value="0.00000000" />
 	</YawCamera>
 	<FreeCamMouseXDecay Value="1" />
 	<YawCameraLeft>
@@ -1356,9 +1366,9 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</YawCameraRight>
 	<RollCamera>
-		<Binding Device="T-Rudder" Key="Joy_ZAxis" />
+		<Binding Device="ThrustMasterWarthogCombined" Key="Joy_XAxis" />
 		<Inverted Value="0" />
-		<Deadzone Value="0.09000000" />
+		<Deadzone Value="0.00000000" />
 	</RollCamera>
 	<RollCameraLeft>
 		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_23">
@@ -1532,8 +1542,9 @@
 		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_19">
 			<Modifier Device="ThrustMasterWarthogCombined" Key="Joy_4" />
 		</Primary>
-		<Secondary Device="ThrustMasterWarthogCombined" Key="Joy_28">
-			<Modifier Device="ThrustMasterWarthogCombined" Key="Joy_4" />
+		<Secondary Device="Keyboard" Key="Key_Numpad_Subtract">
+			<Modifier Device="Keyboard" Key="Key_LeftAlt" />
+			<Modifier Device="Keyboard" Key="Key_RightControl" />
 		</Secondary>
 	</ExplorationFSSQuit>
 	<FSSMouseXMode Value="" />
