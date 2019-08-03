@@ -592,7 +592,7 @@
 		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="Keyboard" Key="Key_7" />
 	</PlayerHUDModeToggle>
-	<ExplorationFSSEnter
+	<ExplorationFSSEnter>
 		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_30">
 			<Modifier Device="ThrustMasterWarthogCombined" Key="Joy_4" />
 		</Primary>
