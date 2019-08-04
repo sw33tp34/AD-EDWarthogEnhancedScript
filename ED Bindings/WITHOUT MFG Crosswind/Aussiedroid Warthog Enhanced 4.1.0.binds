@@ -964,7 +964,7 @@
 		<Secondary Device="Keyboard" Key="Key_Q" />
 	</DecreaseSpeedButtonMax>
 	<IncreaseSpeedButtonPartial>
-		<Binding Device="ThrustMasterWarthogCombined" Key="Joy_RYAxis" />
+		<Binding Device="T-Rudder" Key="Joy_XAxis" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</IncreaseSpeedButtonPartial>
